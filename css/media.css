@@ -1,0 +1,331 @@
+@media(max-width: 1199.98px){
+    #teams .team{
+        height: 100%;
+        width: 100%;
+    }
+
+    #teams .team .title{
+        top: 68%;
+    }
+
+    .team .text{
+        top: 61px;
+    }
+
+    #people #demo-2 .carousel-indicator{
+        left: 228px;
+    }
+
+    .carousel-control-prev{
+        left: 194px !important;
+    }
+
+    .carousel-control-next{
+        right: 204px !important;
+    }
+
+}
+
+
+
+@media(max-width: 991.98px){
+    .carousel-item p{
+        width: 100%;
+    }
+
+    #expertise .line{
+        display: none;
+    }
+
+    #expertise .icon{
+        display: contents;
+    }
+
+    #expertise .icons-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #expertise .margin{
+        margin: 50px 0 45px 0;
+    }
+
+    #teams .team .title{
+        left: 48px;
+    }
+
+    .team .text{
+        padding-left: 59px;
+        top: 171px;
+        font-size: 16px;
+    }
+
+    #teams .team div h4{
+        font-size: 23px;
+    }
+
+    #teams .team .title div p{
+        font-size: 17px;
+    }
+
+    #teams .team:first-child{
+        margin-bottom: 30px;
+    }
+
+    #people #demo-2 .carousel-indicator{
+        left: 188px;
+    }
+
+    .carousel-control-next{
+        right: 170px !important;
+        top: 256px !important;
+    }
+
+    .carousel-control-prev{
+        left: 161px !important;
+        top: 256px !important;
+    }
+
+    #contact .logos .col-xl-5{
+        display: contents;
+    }
+
+    #contact .logos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #contact .client h2{
+        margin-bottom: 0;
+    }
+
+    footer .touch h5{
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 27px;
+    }
+
+    #teams .team{
+        height: 93%;
+    }
+}
+
+
+
+@media(max-width: 767.98px){
+    #expertise .icon div{
+        height: 260px;
+        width: 50%;
+    }
+
+    #expertise .icon h3{
+        display: block;
+        color: #212529 !important;
+    }
+
+    #expertise .icon p{
+        color: #212529;
+    }
+
+    #expertise .icon div svg{
+        display: none;
+    }
+
+    #teams .end p{
+        margin-top: 25px;
+    }
+
+    #people #demo-2 .carousel-indicator{
+        left: 103px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev{
+        right: 73px !important;
+        top: 278px !important;
+    }
+
+    .carousel-control-prev{
+        left: 67px !important;
+    }
+
+    #contact .client{
+        margin-top: 35px;
+    }
+
+    #contact .client h2{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #contact .client h2 + div{
+        height: 108%;
+    }
+
+    #contact .client{
+        min-height: 300px;
+    }
+
+    footer .brand p{
+        margin-bottom: 35px;
+    }
+
+    footer .studio h5,
+    footer .touch h5{
+        margin-bottom: 16px;
+    }
+
+    footer .studio i + p{
+        margin-bottom: 12px;
+    }
+}
+
+
+
+@media(max-width: 575.98px){
+    .slider{
+        margin-top: 50px;
+    }
+
+    #navbar-example2{
+        position: initial !important;
+    }
+
+    #home{
+        padding-bottom: 166px;
+    }
+
+    #about .row{
+        text-align: center;
+    }
+
+    #expertise .icon div{
+        width: 100%;
+    }
+
+    #expertise .margin{
+        margin: 0;
+    }
+
+    #expertise .title hr,
+    #teams .title hr{
+        margin-bottom: 30px;
+    }
+
+    #expertise{
+        padding-bottom: 25px;
+    }
+
+    .team .text{
+        top: 126px;
+        width: 248px;
+        font-size: 15px;
+    }
+
+    #works .row{
+        text-align: center;
+    }
+
+    #works .works-pic{
+        padding-top: 35px;
+    }
+
+    #works{
+        padding: 35px 0;
+    }
+
+    #people #demo-2 .carousel-indicator{
+        display: flex;
+        left: 6px;
+        bottom: -73px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev{
+        top: 329px !important;
+    }
+
+    .carousel-control-prev{
+        left: 52px !important;
+    }
+
+    .carousel-control-next{
+        right: 55px !important;
+    }
+
+    #contact{
+        padding: 43px 0 45px 0;
+    }
+
+    #contact form{
+        text-align: center;
+    }
+
+    #contact .logos .col-xl-5{
+        display: initial;
+    }
+
+    #contact .logos{
+        text-align: center;
+    }
+
+    #contact .logos .col-xl-5:not(:first-child){
+        margin-top: 32px;
+    }
+
+    footer{
+        text-align: center;
+        padding: 45px 0;
+    }
+
+    footer .studio{
+        margin-top: 25px;
+    }
+
+    #contact .client h2 + div{
+        height: auto;
+    }
+
+    footer .touch .social-icons + p{
+        text-align: center;
+    }
+
+    #navbar-example2 .nav{
+        justify-content: center;
+    }
+
+    .text-sm-center{
+        text-align: center;
+    }
+
+    #teams .team div h4{
+        font-size: 18px;
+    }
+
+    #teams .team .title div p{
+        font-size: 13px;
+    }
+
+    #teams .team .title{
+        left: 47px;
+        top: 63%;
+    }
+
+    #teams .team{
+        height: 370px;
+        width: 297px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    #teams .team-hover{
+        margin: auto;
+        overflow: hidden;
+        height: 370px;
+        width: 297px;
+        margin-bottom: 30px;
+    }
+
+}

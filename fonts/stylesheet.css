@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Roboto Th';
+    src: url('./Roboto-Thin.woff2') format('woff2'),
+        url('./Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Bk';
+    src: url('./Roboto-Black.woff2') format('woff2'),
+        url('./Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Lt';
+    src: url('./Roboto-Light.woff2') format('woff2'),
+        url('./Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.woff2') format('woff2'),
+        url('./Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hammersmith One';
+    src: url('./HammersmithOne.woff2') format('woff2'),
+        url('./HammersmithOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-reg';
+    src: url('./PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('./PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-bl';
+    src: url('./PlayfairDisplay-Black.woff2') format('woff2'),
+        url('./PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-bold';
+    src: url('./PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('./PlayfairDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

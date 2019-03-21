@@ -1,0 +1,969 @@
+@import "../fonts/stylesheet.css";
+@import "../css/animate";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* a:hover {
+    text-decoration: none !important;
+}
+
+header {
+    min-height: 670px;
+     background: url(../img/bg-header.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+#navbar-example2 .nav-link {
+    font-family: "Roboto Bk";
+    font-size: 15px;
+    color: skyblue;
+    position: relative;
+}
+
+#navbar-example2 .nav-link::before {
+    font-family: "Roboto Bk";
+    font-size: 15px;
+    color: #00e0d0;
+    max-width: 0;
+    content: attr(data-hover);
+    transition: all 0.3s ease-in-out;
+    border-color: #00e0d0;
+    position: absolute;
+    overflow: hidden;
+    border-bottom: 3px solid #00e0d0;
+    text-transform: uppercase;
+}
+
+.nav-pills .nav-link.active {
+    color: #00e0d0 !important;
+    background: none !important;
+}
+
+header .navbar-brand,
+footer .brand a {
+    color: #17babe !important;
+    font-size: 30px;
+    font-family: "Roboto Th";
+    margin: 0;
+}
+
+header .navbar-brand img,
+footer .brand a img {
+    margin-right: 14px;
+}
+
+.carousel-item h1 {
+    font-size: 32px;
+    font-family: "Playfair Display";
+    font-weight: 900;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel-item hr {
+    background-color: #00e0d0;
+    border: none;
+    height: 1px;
+    width: 50px;
+    margin: 27px auto 27px;
+}
+
+.slider {
+    margin-top: 236px;
+}
+
+.carousel-item p {
+    color: white;
+    font-family: "Roboto Lt";
+    font-size: 14px;
+    width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel-item p a,
+#teams .end a,
+#contact form button {
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    color: #00e0d0;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: "Hammersmith One";
+    margin: 0 auto;
+    border: 1px solid #00e0d0;
+    margin-top: 53px;
+}
+
+.carousel-indicators {
+    bottom: -130px !important;
+}
+
+.carousel-indicators li {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    border: 1px solid #bababc !important;
+}
+
+.carousel-indicators .active {
+    background: #00e0d0 !important;
+    border-color: #00e0d0 !important;
+}
+
+#about {
+    padding: 70px 0;
+}
+
+#about .text h2 {
+    color: #413d4b;
+    font-size: 22px;
+    font-family: "PlayfairDisplay-bold";
+    margin-bottom: 28px;
+    text-transform: uppercase;
+}
+
+#about .text p {
+    font-size: 14px;
+    font-family: "Roboto Lt";
+    color: #83818a;
+    line-height: 22px;
+    margin-bottom: 34px;
+}
+
+#about .text a {
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    border: 1px solid #00e0d0;
+    border-radius: 1px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Hammersmith One";
+    text-decoration: none;
+    line-height: 40px;
+    color: #00e0d0;
+    text-align: center;
+}
+
+#expertise {
+    padding: 70px 0 105px 0;
+    background-color: #fff;
+}
+
+#expertise .title h2,
+#teams .title h2,
+#contact form h2,
+#contact .client h2,
+#works .title h2 {
+    text-transform: uppercase;
+    color: #413d4b;
+    font-size: 22px;
+    font-family: "PlayfairDisplay-bold";
+    margin-bottom: 17px;
+}
+
+#expertise .title p,
+#teams .title p {
+    font-size: 14px;
+    color: #8d8c90;
+    font-family: "PlayfairDisplay-reg";
+    margin-bottom: 21px;
+}
+
+#expertise .title hr,
+#teams .title hr {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    border: none;
+    background-color: #c6c4c9;
+    margin: 0 0 84px 0;
+}
+
+#expertise .icon h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff !important;
+    font-family: "Roboto Bk";
+    margin: 35px 0 28px 0;
+    transition: all 0.6s ease-in-out;
+    /* display: none; */
+}
+
+#expertise .icon p {
+    font-size: 14px;
+    color: #fff;
+    font-family: "Roboto Lt";
+    margin: 0;
+    width: 254px;
+    margin: 0 auto;
+    transition: all 0.5s 0.5s ease-in-out;
+}
+
+#expertise .line hr {
+    width: 100%;
+    display: inline-block;
+    height: 1px;
+    background-color: #ebebeb;
+    margin: 42px 0;
+}
+
+#teams {
+    background: url(../img/bg-team.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+#teams .title h2,
+#teams .title p {
+    color: #fff;
+}
+
+#teams .title hr {
+    background-color: #655c81;
+    margin-bottom: 47px;
+}
+
+#teams .team div h4 {
+    font-size: 18px;
+    color: #fff;
+    font-family: "Roboto Bk";
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#teams .team .title div p {
+    font-family: "Roboto Bk";
+    color: black;
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+#teams .team {
+    overflow: hidden;
+    position: relative;
+    width: 255px;
+    height: 316px;
+}
+
+#teams .team .title {
+    position: absolute;
+    top: 74%;
+    left: 36px;
+    padding: 5px 10px 10px 10px;
+}
+
+#teams .team .title::before,
+#teams .team .title::after {
+    content: "";
+    height: 2px;
+    width: 800px;
+    position: absolute;
+    background-color: #fff;
+}
+
+#teams .team .title::before {
+    top: 0;
+    left: 11px;
+    transform: translateX(100%);
+}
+
+#teams .team .title::after {
+    bottom: 0;
+    right: 11px;
+    transform: translateX(-100%);
+}
+
+#teams .team .title div::before,
+#teams .team .title div::after {
+    content: "";
+    height: 800px;
+    width: 2px;
+    position: absolute;
+    background-color: #fff;
+}
+
+#teams .team .title div::before {
+    right: 0;
+    top: 7px;
+    transform: translateY(100%);
+}
+
+#teams .team .title div::after {
+    left: 0;
+    bottom: 10px;
+    transform: translateY(-100%);
+}
+
+#teams .team *::before,
+#teams .team *::after {
+    transition: all 0.55s ease;
+}
+
+.team-hover:hover .title div::before,
+.team-hover:hover .title div::after,
+.team-hover:hover .title::before,
+.team-hover:hover .title::after {
+    transform: translate(0, 0) !important;
+}
+
+.team-hover:hover .team img {
+    opacity: 0.35 !important;
+    zoom: 1;
+}
+
+.team .text {
+    position: absolute;
+    color: white;
+    top: 41%;
+    text-align: left;
+    padding-left: 46px;
+    font-size: 14px;
+    font-family: "Roboto";
+    opacity: 0;
+    transition: all 0.55s ease;
+}
+
+.team-hover:hover .team .text {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.team .text p {
+    margin: 0;
+}
+
+#teams .team img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+#teams .end a {
+    margin-top: 29px;
+    width: 140px;
+}
+
+#teams .end p {
+    font-size: 14px;
+    color: #d6d5db;
+    font-family: "Roboto Lt";
+    margin-top: 70px;
+}
+
+#people {
+    background: url(../img/bg-people.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 0 0 70px 0;
+    min-height: 500px;
+}
+
+#people #demo-2 .carousel-indicator li {
+    display: inline-block;
+}
+
+#people #demo-2 .carousel-indicator {
+    position: absolute;
+    bottom: -84px;
+    left: 304px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 20px !important;
+    height: 20px !important;
+    top: 233px !important;
+    right: 278px !important;
+}
+
+.carousel-control-prev {
+    left: 268px !important;
+}
+
+#people #demo-2 .carousel-indicator li:not(:last-child) {
+    margin-right: 15px;
+}
+
+#people #demo-2 .carousel-item .text {
+    font-size: 16px;
+    color: #d6d4dc;
+    font-family: "PlayfairDisplay-reg";
+}
+
+#people #demo-2 .carousel-item h5 {
+    font-size: 14px;
+    color: white;
+    font-family: "Roboto Bk";
+    text-align: center;
+    margin-top: 55px;
+}
+
+#people #demo-2 .carousel-indicator li:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+#contact form h2 {
+    color: #413d4b;
+    margin-bottom: 35px;
+}
+
+#contact {
+    padding: 71px 0;
+}
+
+#contact form input {
+    display: inline-block;
+    width: 100%;
+    height: 43px;
+    margin-bottom: 23px;
+    border: 1px solid #e5e5e5;
+    padding: 0 0 0 20px;
+    color: #a09ea5;
+    font-size: 14px;
+    font-family: "Roboto Lt";
+    transition: all 0.3s;
+}
+
+#contact form textarea {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: 1px solid #e5e5e5;
+    padding: 20px 0 0 20px;
+    color: #a09ea5;
+    font-size: 14px;
+    font-family: "Roboto Lt";
+    margin-bottom: 23px;
+    transition: all 0.3s;
+}
+
+#contact form button {
+    margin-top: 0;
+    background-color: #fff;
+}
+
+#contact .client h2+div {
+    height: 100%;
+}
+
+#contact .client h2 {
+    margin-bottom: 47px;
+}
+
+footer {
+    color: white;
+    background: url(../img/bg-footer.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+footer .brand p {
+    margin: 30px 0 80px 0;
+    font-size: 14px;
+    font-family: "Roboto Lt";
+}
+
+footer .brand ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .brand ul li {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+footer .studio h5,
+footer .touch h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Roboto Bk";
+    margin-bottom: 39px;
+}
+
+footer .studio p i {
+    margin-right: 15px;
+}
+
+footer .studio p {
+    font-family: "Roboto Lt";
+    font-size: 14px;
+}
+
+footer .studio i+p {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+footer .studio h5+i {
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+footer .touch h5 {
+    margin-bottom: 39px;
+}
+
+footer form input {
+    height: 45px;
+    width: 60%;
+    display: inline-block;
+    border: 1px solid #9b93ad;
+    padding: 0 15px;
+    color: #d9d8de;
+    font-size: 14px;
+    font-family: "Roboto Lt";
+    line-height: 45px;
+    margin-bottom: 27px;
+}
+
+footer form .SendBtn {
+    display: inline-block;
+    width: 35%;
+    height: 45px;
+    background: transparent;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 3%;
+    text-transform: uppercase;
+    line-height: 35px;
+    color: #fff;
+    font-family: "PlayfairDisplay-bold";
+    letter-spacing: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    transition: all 0.25s;
+}
+
+footer form .SendBtn::before,
+footer form .SendBtn::after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    backface-visibility: visible;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    transform-origin: 50% -50%;
+    transform: rotateX(360deg) rotateY(0) translateX(-50%) translateY(0) scale(0.2);
+    transition: all 0.5s;
+}
+
+footer form .SendBtn::before {
+    top: 5px;
+    left: 50%;
+    height: 3rem;
+    background: white;
+    border-top: 2rem solid #2980b9;
+    border-right: 3rem solid transparent;
+    border-left: 3rem solid transparent;
+}
+
+footer form .SendBtn:hover {
+    color: transparent;
+    border: 2px solid transparent;
+    background-color: transparent;
+    transition: all 0.25s;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+footer form .SendBtn::after {
+    top: 0;
+    left: 50%;
+    border-top: 2rem solid white;
+    border-right: 3rem solid transparent;
+    border-left: 3rem solid transparent;
+    outline: none;
+    background: transparent;
+}
+
+footer form .SendBtn:focus{
+    outline: none;
+    color: transparent;
+}
+
+footer form .SendBtn:hover::before,
+footer form .SendBtn:hover::after {
+    opacity: 1;
+    transform: rotateX(0) rotateY(-10deg) translateX(-50%) translateY(0) scale(1);
+    outline: none;
+}
+
+.fly {
+    color: transparent;
+    border: 2px solid transparent;
+    animation: sended 4s 0.8s forwards;
+    outline: none;
+}
+
+@keyframes sended {
+    0% {
+        height: 2rem;
+        width: 3.5rem;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 10px solid white;
+        border-left: 10px solid white;
+        opacity: 0;
+        transform: rotate(-45deg) translateX(300%) translateY(-500%);
+    }
+
+    5% {
+        height: 2rem;
+        width: 3.5rem;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 10px solid white;
+        border-left: 10px solid white;
+        opacity: 1;
+        transform: rotate(-45deg) translateX(0) translateY(0);
+    }
+
+    78% {
+        height: 2rem;
+        width: 3.5rem;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 10px solid white;
+        border-left: 10px solid white;
+        opacity: 1;
+        transform: rotate(-45deg) translateX(0) translateY(0);
+    }
+
+    79% {
+        height: 2rem;
+        width: 3.5rem;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 10px solid white;
+        border-left: 10px solid white;
+        opacity: 0;
+        transform: rotate(-45deg) translateX(0) translateY(0);
+    }
+
+    80% {
+        height: auto;
+        width: auto;
+        color: rgba(255, 255, 255, 0);
+        border: 2px solid rgba(255, 255, 255, 0);
+        opacity: 0;
+        transform: rotate(0) translateX(0) translateY(0);
+    }
+
+    100% {
+        height: auto;
+        width: auto;
+        color: rgba(255, 255, 255, 1);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        opacity: 1;
+        transform: rotate(0) translateX(0) translateY(0);
+    }
+}
+
+.fly::before,
+.fly::after {
+    animation: flyout .6s forwards;
+    outline: none;
+}
+
+
+@keyframes flyout {
+    0% {
+        opacity: 1;
+        transform: rotateX(0) rotateZ(0) translateX(-50%) translateY(0) scale(1);
+    }
+
+    33% {
+        opacity: 0.66;
+        transform: rotateX(0) rotateZ(-5deg) translateX(-100%) translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotateX(0) rotateZ(0) translateX(1000%) translateY(0) scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+footer .touch .social-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .touch .social-icons a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s;
+}
+
+footer .touch .social-icons a i{
+    font-size: 22px;
+    color: white;
+    transition: all 0.3s;
+}
+
+footer .touch .social-icons+p {
+    font-size: 14px;
+    font-family: "Roboto";
+    margin-top: 70px;
+    text-align: end;
+}
+
+footer .facebook:hover{
+    border-color: #3b5998 !important;
+    box-shadow: 0 0 15px #3b5998;
+}
+
+footer .facebook:hover i{
+    color: #3b5998 !important;
+    text-shadow: 0 0 15px #3b5998;
+    cursor: pointer;
+}
+
+footer .twitter:hover{
+    border-color: #00acee !important;
+    box-shadow: 0 0 15px #00acee;
+}
+
+footer .twitter:hover i{
+    color: #00acee !important;
+    text-shadow: 0 0 15px #00acee;
+    cursor: pointer;
+}
+
+footer .instagram:hover{
+    border-color: #8a3ab9 !important;
+    box-shadow: 0 0 15px #8a3ab9;
+}
+
+footer .instagram:hover i{
+    color: #8a3ab9 !important;
+    text-shadow: 0 0 15px #8a3ab9;
+    cursor: pointer;
+}
+
+footer .google:hover{
+    border-color: #dd4b39 !important;
+    box-shadow: 0 0 15px #dd4b39;
+}
+
+footer .google:hover i{
+    color: #dd4b39 !important;
+    text-shadow: 0 0 15px #dd4b39;
+    cursor: pointer;
+}
+
+footer .youtube:hover{
+    border-color: #FF0000 !important;
+    box-shadow: 0 0 15px #FF0000;
+}
+
+footer .youtube:hover i{
+    color: #FF0000 !important;
+    text-shadow: 0 0 15px #FF0000;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-indicators li:hover {
+    cursor: pointer;
+}
+
+.btn-darks,
+.btn-lights {
+    transition: all 0.5s;
+}
+
+.btn-darks:hover {
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid white !important;
+    color: white !important;
+    background-color: #46a3cc;
+    letter-spacing: 1px;
+}
+
+.btn-lights:hover {
+    cursor: pointer;
+    background-color: #30235f !important;
+    border: 2px solid #46a3cc !important;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#expertise .icon div {
+    position: relative;
+    padding: 26px 0;
+    width: 310px;
+    height: 75px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+#expertise .icon div svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#expertise .icon div svg line {
+    stroke-width: 5px;
+    stroke: white;
+    transition: all 0.5s 0.2s linear;
+}
+
+#expertise .icon div svg .top,
+#expertise .icon div svg .bottom {
+    stroke-dasharray: 310;
+}
+
+#expertise .icon div svg .left,
+#expertise .icon div svg .right {
+    stroke-dasharray: 244;
+}
+
+#expertise .icon div:hover .top {
+    transform: translateX(-620px);
+    stroke: #46a3cc;
+}
+
+#expertise .icon div:hover .right {
+    transform: translateY(-488px);
+    stroke: #46a3cc;
+}
+
+#expertise .icon div:hover .bottom {
+    transform: translateX(620px);
+    stroke: #30235f;
+}
+
+#expertise .icon div:hover .left {
+    transform: translateY(488px);
+    stroke: #30235f;
+}
+
+#expertise .icon div p {
+    color: #8d8c90;
+    font-weight: bold;
+}
+
+#expertise .icon div h3 {
+    display: block;
+    color: #5a5763 !important;
+
+}
+
+#expertise .icon div {
+    height: 244px;
+}
+
+#expertise .icon div:hover {
+    cursor: pointer;
+}
+
+.video .col-xl-12 {
+    box-sizing: content-box;
+}
+
+.video .container-fluid {
+    padding: 0;
+}
+
+#works {
+    padding: 70px 0;
+}
+
+#works .title+div a {
+    font-size: 14px;
+    font-family: "Roboto Lt";
+    color: #413d4b;
+}
+
+#works .title h2 {
+    margin: 0;
+}
+
+#works .works-pic img {
+    width: 265px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+
+#works .works-pic {
+    padding-top: 70px;
+    justify-content: center;
+}
+
+#contact form input:focus,
+#cotact form textarea:focus {
+    box-shadow: 0px 0px 0px 2px #46a3cc;
+    outline: none;
+}
+
+.video .row {
+    margin: 0;
+    display: block;
+}
+
+
+#expertise .icons-content {
+    display: contents;
+}
+
+#people .container::before {
+    content: open-quote;
+    color: white;
+    font-family: "PlayfairDisplay-reg";
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+}
+
+header .nav-link:hover::before {
+    max-width: 100% !important;
+}
